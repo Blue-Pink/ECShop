@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        td
+        {
+          text-align:center;
+        }
+        th
+        {
+           font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="action-span"><a href="goodAdd.htm">添加新商品</a></span> <span class="action-span1">
+            <a href="main.htm">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1">
+                - 商品列表 </span>
+        <div style="clear: both">
+        </div>
+    </h1>
+    <!-- 商品搜索 -->
+    <div class="form-div">
+        <form action="" name="searchForm">
+        商品名
+        <input type="text" name="keyword" size="15" />
+        <input type="submit" value=" 搜索 " class="button" />
+        </form>
+    </div>
+    <!-- 商品列表 -->
+    <form method="post" action="" name="listForm">
+    <!-- start goods list -->
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>
+                    编号
+                </th>
+                <th>
+                    商品名称
+                </th>
+                <th>
+                    ISBN
+                </th>
+                <th>
+                    价格
+                </th>
+                <th>
+                    库存
+                </th>
+                <th>
+                    操作
+                </th>
+                <tr>
+            <tr>
+                <td>
+                    4976
+                </td>
+                <td align=left>
+                    <img src=
+                    "images/9787302144175.jpg" width="50px" height="50px" /> C#2005技术内幕
+                </td>
+                <td>
+                    <span>9787302144175</span>
+                </td>
+                <td align="right">
+                    <span>59.0000 </span>
+                </td>
+                <td align="center">
+                    <span>0</span>
+                </td>
+                <td align="center">
+                    <a href="goodEdit.htm" title="编辑">
+                        <img src="images/icon_edit.gif" width="16" height="16" border="0" /></a> 
+                        <a onclick="javascript:confirm('你确定要删除吗')" title="回收站">
+                            <img src="images/icon_trash.gif" width="16" height="16" border="0" /></a>
+                </td>
+            </tr>
+        </table>
+        <!-- end goods list -->
+        <!-- 分页 -->
+        <table id="page-table" cellspacing="0">
+            <tr>
+                <td align="right" nowrap="true">
+                    <div id="turn-page">
+                        总计 <span id="totalRecords">22</span> 个记录分为 <span id="totalPages">2</span> 页当前第 <span
+                            id="pageCurrent">1</span> 页，每页
+                        <input type='text' size='3' id='pageSize' value="15" />
+                        <span id="page-link"><a href="">第一页</a> <a href="">上一页</a> <a href="">下一页</a> <a
+                            href="">最末页</a>
+                            <select id="gotoPage" onchange="">
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                            </select>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        <span class="action-span"><a href="goodSType.htm">商品小类别</a></span> <span class="action-span1">
+            <a href="main.htm">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1">
+                - 添加小类别 </span>
+        <div style="clear: both">
+        </div>
+    </h1>
+    <!-- start Type form -->
+    <div class="tab-div">
+        <!-- tab body -->
+        <div id="tabbody-div">
+            <form enctype="multipart/form-data" action="" method="post" name="theForm">
+            <!-- 通用信息 -->
+            <table width="90%" id="general-table" align="center">
+                <tr>
+                    <td class="label">
+                        大类别名称：
+                    </td>
+                    <td>
+                        <select name="cat_id">
+                            <option value="0">请选择...</option>
+                            <option value="1" selected>历史人文</option>
+                            <option value="2">网络小说</option>
+                            <option value="3">现代文学</option>
+                            <option value="4">古典文学</option>
+                            <option value="4" selected>软件类</option>
+                            <option value="4">硬件类</option>
+                        </select>
+                        <span class="require-field">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        小类别名称：
+                    </td>
+                    <td>
+                        <input type="text" name="goods_name" value="C#" style="float: left; color: " size="30" /><span
+                            class="require-field">*</span><br />
+                </tr>
+            </table>
+            <div class="button-div">
+                <input type="hidden" name="goods_id" value="32" />
+                <input type="submit" value=" 确定 " class="button" />
+                <input type="reset" value=" 重置 " class="button" />
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- end Type form -->
+</body>
+</html>

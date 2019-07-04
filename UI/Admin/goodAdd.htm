@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+<span class="action-span"><a href="goods.htm">商品列表</a></span>
+<span class="action-span1"><a href="main.htm">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加商品信息 </span>
+<div style="clear:both"></div>
+</h1>
+
+<!-- start goods form -->
+<div class="tab-div">
+    <!-- tab bar -->
+    <div id="tabbar-div">
+      <p>
+        <span class="tab-front" id="general-tab">通用信息</span><span
+      </p>
+    </div>
+
+    <!-- tab body -->
+    <div id="tabbody-div">
+      <form enctype="multipart/form-data" action="" method="post" name="theForm">
+        <!-- 通用信息 -->
+        <table width="90%" id="general-table" align="center">
+          <tr onmouseover="">
+            <td class="label">商品名称：</td>
+            <td><input type="text" name="goods_name" value="Visual C#2005技术内幕" style="float:left;color:;" size="30" />
+          </tr>
+          <tr>
+            <td class="label">
+             商品货号： </td>
+            <td><input type="text" name="goods_sn" value="9787302144175" size="20" /><br />
+          </tr>
+          <tr>
+            <td class="label">商品小类：</td>
+            <td><select name="cat_id">
+                <option value="0">请选择...</option>
+                <option value="1" selected > C#</option>
+                <option value="2" > .NET</option>
+                <option value="3" > ASP.NET</option>
+                <option value="4" > 穿越小说</option>
+                </select>
+                <span class="require-field">*</span>            </td>
+          </tr>
+          <tr>
+            <td class="label">商品价格：</td>
+            <td><input type="text" name="shop_price" value="59.0000" size="20"/>
+          </tr>
+          <tr>
+            <td class="label">上传商品图片：</td>
+            <td>
+              <input type="file" name="goods_img" size="35" />
+            </td>
+          </tr>
+          <tr>
+            <td class="label">商品库存：</td>
+            <td><input type="text" name="shop_count" value="0" size="20"/>
+          </tr>
+        </table>
+        <div class="button-div">
+          <input type="hidden" name="goods_id" value="32" />
+                    <input type="submit" value=" 确定 " class="button" />
+          <input type="reset" value=" 重置 " class="button" />
+        </div>
+      </form>
+    </div>
+</div>
+<!-- end goods form -->
+</body>
+</html>

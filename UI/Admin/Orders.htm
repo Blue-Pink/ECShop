@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        td
+        {
+            text-align: center;
+        }
+        th
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="action-span1"><a href="main.htm">ECSHOP 管理中心</a> </span><span id="search_id"
+            class="action-span1">- 订单列表 </span>
+        <div style="clear: both">
+        </div>
+    </h1>
+    <!-- 商品搜索 -->
+    <div class="form-div">
+        <form action="" name="searchForm">
+        订单号
+        <input type="text" name="ordernumber" size="15" />
+        收货人
+        <input type="text" name="orderRen" size="15" />
+        <input type="submit" value=" 搜索 " class="button" />
+        </form>
+    </div>
+    <!-- 商品列表 -->
+    <form method="post" action="" name="listForm">
+    <!-- start goods list -->
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>
+                    订单号
+                </th>
+                <th>
+                    订单时间
+                </th>
+                <th>
+                    收货人
+                </th>
+                <th>
+                    总金额
+                </th>
+                <th>
+                    订单状态
+                </th>
+                <th>
+                    操作
+                </th>
+                <tr>
+            <tr>
+                <td>
+                    DD20120305
+                </td>
+                <td align="left">
+                    2012-03-05
+                </td>
+                <td>
+                    张三
+                </td>
+                <td align="right">
+                   100.0000
+                </td>
+                 <td align="right">
+                   新订单->
+                   <input type=button value="订单确认" />
+                </td>
+                <td align="center">
+                    <a href="OrderDetail.htm" title="查看">
+                        <img src="images/icon_view.gif" width="16" height="16" border="0" /></a> 
+                </td>
+            </tr>
+        </table>
+        <!-- end goods list -->
+        <!-- 分页 -->
+        <table id="page-table" cellspacing="0">
+            <tr>
+                <td align="right" nowrap="true">
+                    <div id="turn-page">
+                        总计 <span id="totalRecords">22</span> 个记录分为 <span id="totalPages">2</span> 页当前第 <span
+                            id="pageCurrent">1</span> 页，每页
+                        <input type='text' size='3' id='pageSize' value="15" />
+                        <span id="page-link"><a href="">第一页</a> <a href="">上一页</a> <a href="">下一页</a> <a
+                            href="">最末页</a>
+                            <select id="gotoPage" onchange="">
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                            </select>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

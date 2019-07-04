@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        td
+        {
+            text-align: center;
+        }
+        th
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="action-span1"><a href="main.htm">ECSHOP 管理中心</a></span><span id="search_id"
+            class="action-span1"> - 商品小类别 </span>
+        <div style="clear: both">
+        </div>
+    </h1>
+    <!-- 商品搜索 -->
+    <div class="form-div">
+        <form action="" name="searchForm">
+        <input type="button" value=" 显示所有小类别" class="button" />
+        <input type="button" value=" 小类别添加 " class="button" onclick="javascript:window.location.href='goodSTypeAdd.htm'" />
+        </form>
+    </div>
+    <!-- 商品列表 -->
+    <form method="post" action="" name="listForm">
+    <!-- start goods list -->
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+                <th>
+                    小类别名称
+                </th>
+                <th>
+                    大类别名称
+                </th>
+                <th>
+                    操作
+                </th>
+                <tr>
+                    <tr>
+                        <td>
+                            C#
+                        </td>
+                        <td>
+                            软件类
+                        </td>
+                        <td align="center">
+                            <a href="goodSTypeEdit.htm" title="编辑">
+                                <img src="images/icon_edit.gif" width="16" height="16" border="0" /></a> <a onclick="javascript:confirm('你确定要删除吗')"
+                                    title="回收站">
+                                    <img src="images/icon_trash.gif" width="16" height="16" border="0" /></a>
+                        </td>
+                    </tr>
+        </table>
+        <!-- end goods list -->
+    </div>
+    </form>
+</body>
+</html>
